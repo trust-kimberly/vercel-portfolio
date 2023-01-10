@@ -1,0 +1,70 @@
+import Head from 'next/head'
+import { Inter } from '@next/font/google'
+import styles from '../styles/Home.module.css'
+import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, Tag, HStack, Button, Link, Wrap, Box } from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
+import Header from '../components/header'
+import ChakraCarousel from '../components/carousel'
+import { ST } from 'next/dist/shared/lib/utils'
+
+export default function Project ({title, description, images, toggleShowProject, blur, toggleBlur}) {
+  return (
+      <Stack h="100vh" maxH="100vh" w="100vw" zIndex="5" position="absolute">
+        <Grid
+          maxH="100vh"
+          height="100vh"
+          templateRows='1fr auto'
+          templateColumns='repeat(4, 1fr)'
+          bg="transparent"
+        >
+          <GridItem
+          rowSpan={1}
+          colSpan={4}
+          bg="transparent"
+          overflow="scroll"
+          display="flex"
+          gap={2}
+          mt={8}
+          >
+            {images.map((elem, index) =>
+                <Image
+                  key={index}
+                  src={elem}
+                  alt={index}
+                  boxSize="100%"
+                  objectFit="contain"
+                />
+              )}
+          </GridItem>
+          <GridItem
+            rowSpan={1}
+            colSpan={1}
+            p={8}
+          >
+            <Header blur={blur} toggleBlur={toggleBlur} />
+          </GridItem>
+          <GridItem
+            rowSpan={1}
+            colStart={3}
+            colEnd={4}
+            p={8}
+          >
+            <Flex
+              direction="column"
+            >
+              <Link><h1>{title}</h1></Link>
+              <Link onClick={() => toggleShowProject()}>All Work</Link>
+            </Flex>
+          </GridItem>
+          <GridItem
+            rowSpan={1}
+            colStart={4}
+            colEnd={5}
+            p={8}
+          >
+            <p>{description}</p>
+          </GridItem>
+        </Grid>
+      </Stack>
+  )
+}
