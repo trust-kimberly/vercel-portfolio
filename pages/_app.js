@@ -15,6 +15,7 @@ const theme = extendTheme({
       },
       h2: {
         fontSize: "20px",
+        lineHeight: "24px"
       },
       h3: {
         fontSize: "18px",

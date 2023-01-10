@@ -179,7 +179,7 @@ export default function Home() {
 
       {blur &&
       <Center h="100vh" w="100vw" position="absolute" zIndex="7" onClick={() => toggleBlur(false)} cursor="grab">
-        <Stack w="50%">
+        <Stack w="50%" spacing={8}>
           <About />
           <Contact />
         </Stack>

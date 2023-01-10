@@ -2,11 +2,14 @@ import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, T
 
 export default function Contact () {
   return (
-    <Stack>
-      <h2>Write me a <Link>Missed Connection</Link> 💌</h2>
-      <h2>Creep my code on <Link>Github</Link> 💻</h2>
-      <h2>See where I&apos;ve been on <Link>LinkedIn</Link></h2>
-      <h2>Slide into my <Link>DM&apos;s</Link> 📲</h2>
+    <Stack spacing={6}>
+      <h1>Contact 💻</h1>
+      <Link href="mailto:kimberlynguyen.xyz@gmail.com" isExternal><h2>kimberlynguyen.xyz@gmail.com</h2></Link>
+      <Stack spacing={0}>
+      <Link href="https://github.com/trust-kimberly" isExternal><h3>GitHub</h3></Link>
+      <Link href="https://www.linkedin.com/in/trust-kimberly/" isExternal><h3>LinkedIn</h3></Link>
+      <Link><h3>CV</h3></Link>
+      </Stack>
     </Stack>
   )
 }

@@ -24,7 +24,7 @@ export default function Project ({title, description, images, toggleShowProject,
           overflow="scroll"
           display="flex"
           gap={2}
-          mt={8}
+          // mt={8}
           >
             {images.map((elem, index) =>
                 <Image
@@ -52,8 +52,15 @@ export default function Project ({title, description, images, toggleShowProject,
             <Flex
               direction="column"
             >
-              <Link><h1>{title}</h1></Link>
-              <Link onClick={() => toggleShowProject()}>All Work</Link>
+              <h1>{title}</h1>
+              <Link onClick={() => toggleShowProject()} mt="14px"><h3>All Work</h3></Link>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              <h1>&nbsp;</h1>
+              
             </Flex>
           </GridItem>
           <GridItem
@@ -62,7 +69,10 @@ export default function Project ({title, description, images, toggleShowProject,
             colEnd={5}
             p={8}
           >
+            <Stack spacing={6}>
             <p>{description}</p>
+            {/* <Link onClick={() => toggleShowProject()}>All Work</Link> */}
+            </Stack>
           </GridItem>
         </Grid>
       </Stack>
