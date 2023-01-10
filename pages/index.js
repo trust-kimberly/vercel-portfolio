@@ -10,11 +10,12 @@ import Project from '../components/project'
 import About from '../components/about'
 import Contact from '../components/contact'
 import { ST } from 'next/dist/shared/lib/utils'
+// import Model from '../components/Model'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Model = dynamic(
-  () => import('../components/Model'),
+  () => import('../components/model.js'),
   { ssr: false }
 )
 
