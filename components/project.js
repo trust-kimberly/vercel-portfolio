@@ -37,6 +37,7 @@ export default function Project ({title, link, description, images, toggleShowPr
                 alt={index}
                 boxSize="100%"
                 objectFit="contain"
+                loading="lazy"
               />
             )}
           </GridItem>
