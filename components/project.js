@@ -58,7 +58,7 @@ export default function Project ({title, link, description, images, toggleShowPr
             >
               <h1>{title}</h1>
               <Link onClick={() => toggleShowProject()} mt="14px"><h3>All Work</h3></Link>
-              <h1>&nbsp;</h1>
+              {/* <h1>&nbsp;</h1> */}
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
