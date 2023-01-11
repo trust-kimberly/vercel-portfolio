@@ -181,7 +181,7 @@ export default function Home() {
       toggleBlur={toggleBlur}
       />
       :
-      <Stack w="100vw" zIndex="5" position="absolute" bottom={0} filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.5}>
+      <Stack w="100vw" zIndex="5" position="absolute" bottom={0} filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25}>
       <Grid
         templateRows='repeat(1, auto)'
         templateColumns='repeat(4, 1fr)'
