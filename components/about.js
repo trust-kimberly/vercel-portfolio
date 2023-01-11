@@ -1,4 +1,4 @@
-import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, Tag, HStack, Button, Link, Wrap, useDisclosure, Modal, ModalOverlay, ModalHeader, ModalCloseButton, ModalBody, Lorem, ModalFooter, ModalContent, Box, Center } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 
 export default function About () {
   return (

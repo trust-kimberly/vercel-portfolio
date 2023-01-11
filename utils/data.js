@@ -10,6 +10,16 @@ const data = [
     images: ["/sessions.jpg", "/nextmusic.png", "/nextmusic-login.png"],
   },
   {
+    title: "Arthur's",
+    slug: "arthurs",
+    description: [
+      "2022",
+      "WIP",
+      "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
+    ],
+    images: ["/arthurs.png", "/arthurs2.png"],
+  },
+  {
     title: "Lexi",
     slug: "lexi",
     link: "lexiwimberly.com",
@@ -72,16 +82,6 @@ const data = [
     images: ["/archaeology.png"],
   },
   {
-    title: "Arthur's",
-    slug: "arthurs",
-    description: [
-      "2022",
-      "WIP",
-      "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
-    ],
-    images: ["/arthurs.png", "/arthurs2.png"],
-  },
-  {
     title: "Inventory",
     slug: "inventory",
     link: "trust-kimberly.github.io/stickie",
@@ -102,6 +102,25 @@ const data = [
     images: ["/longshot6.png", "/longshot4.png", "/longshot2.png", "/longshot5.png"],
   },
   {
+    title: "Chicken Studies",
+    slug: "chicken",
+    description: [
+      "2016",
+      "Kilncast glass"
+    ],
+    images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
+  },
+  {
+    title: "Onion TV",
+    slug: "onion",
+    description: [
+      "2020",
+      "Raw onion, iPhone, video"
+    ],
+    images: ["/oniontv.png", "/oniontv2.png"],
+    videos: ["/oniontv.mov"]
+  },
+  {
     title: "In Case of Emergency",
     slug: "emergency",
     description: [
@@ -118,25 +137,6 @@ const data = [
       "Chili seeds, bodily fluids, soil, grow light, audio, plaster"
     ],
     images: ["/tobear.jpg"],
-  },
-  {
-    title: "Chicken Studies",
-    slug: "chicken",
-    description: [
-      "2016",
-      "Kilncast glass"
-    ],
-    images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
-  },
-  {
-    title: "Onion TV",
-    slug: "onion",
-    description: [
-      "2020",
-      "Raw onion, video"
-    ],
-    images: ["/oniontv.png"],
-    // videos: ["/oniontv.mov"]
   },
 ]
 

@@ -1,12 +1,10 @@
 import Head from 'next/head'
-import { Grid, GridItem, Stack, Flex, Link, Center } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Header from '../components/header'
 import { useState } from 'react'
-import Project from '../components/project'
 import About from '../components/about'
 import Contact from '../components/contact'
-import { data } from '../utils'
 import Footer from './footer'
 
 const Model = dynamic(
@@ -15,10 +13,7 @@ const Model = dynamic(
 )
 
 export default function Mobile () {
-
   const [blur, toggleBlur] = useState(false)
-  const [showProject, toggleShowProject] = useState(false)
-  const [project, setProject] = useState()
 
   return (
     <>
@@ -28,10 +23,9 @@ export default function Mobile () {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Stack w="100vw" zIndex="5" position="absolute" bottom={0} filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25} p={6}>
-          <Header blur={blur} toggleBlur={toggleBlur} />
-        </Stack>
-
+      <Stack w="100vw" zIndex="5" position="absolute" bottom={0} filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25} p={6}>
+        <Header blur={blur} toggleBlur={toggleBlur} />
+      </Stack>
       {blur &&
         <>
           <Stack zIndex="10" position="fixed">

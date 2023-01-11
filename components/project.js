@@ -1,12 +1,18 @@
-import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, Tag, HStack, Button, Link, Wrap, Box } from '@chakra-ui/react'
+import { Grid, GridItem, Stack, Flex, Image, Link } from '@chakra-ui/react'
 import Header from '../components/header'
 
 export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
   return (
-      <Stack h="100vh" maxH="100vh" w="100vw" zIndex="5" position="absolute" filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25}>
+      <Stack
+        h="100vh"
+        maxH="100vh"
+        w="100vw"
+        zIndex="5"
+        position="absolute"
+        filter={blur && "auto"}
+        blur={blur && "6px"}
+        opacity={blur && 0.25}
+      >
         <Grid
           maxH="100vh"
           height="100vh"
@@ -15,14 +21,14 @@ export default function Project ({title, link, description, images, toggleShowPr
           bg="transparent"
         >
           <GridItem
-          rowSpan={1}
-          colSpan={4}
-          bg="transparent"
-          overflow="scroll"
-          display="flex"
-          gap={2}
-          mt={8}
-          className="scrollbar"
+            rowSpan={1}
+            colSpan={4}
+            bg="transparent"
+            overflow="scroll"
+            display="flex"
+            gap={2}
+            mt={8}
+            className="scrollbar"
           >
             {images.map((elem, index) =>
               <Image
@@ -52,13 +58,11 @@ export default function Project ({title, link, description, images, toggleShowPr
             >
               <h1>{title}</h1>
               <Link onClick={() => toggleShowProject()} mt="14px"><h3>All Work</h3></Link>
-              {/* <h1>&nbsp;</h1> */}
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
-              
             </Flex>
           </GridItem>
           <GridItem

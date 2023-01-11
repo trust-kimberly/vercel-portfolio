@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import { data } from '../utils'
 import { Stack, Link, Image } from '@chakra-ui/react'
-import { useEffect } from 'react'
 import Footer from '../components/footer'
 
 export default function MobileProject () {

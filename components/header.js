@@ -1,6 +1,6 @@
-import { Stack, Link, Flex, Text, Box, useMediaQuery } from "@chakra-ui/react";
+import { Stack, Link, Flex, useMediaQuery } from "@chakra-ui/react";
 
-export default function Header ({blur, toggleBlur}) {
+export default function Header ({toggleBlur}) {
   const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
 
   return (
