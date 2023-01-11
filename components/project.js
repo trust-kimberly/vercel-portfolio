@@ -7,7 +7,7 @@ import Header from '../components/header'
 import ChakraCarousel from '../components/carousel'
 import { ST } from 'next/dist/shared/lib/utils'
 
-export default function Project ({title, description, images, toggleShowProject, blur, toggleBlur}) {
+export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
   return (
       <Stack h="100vh" maxH="100vh" w="100vw" zIndex="5" position="absolute">
         <Grid
@@ -24,17 +24,18 @@ export default function Project ({title, description, images, toggleShowProject,
           overflow="scroll"
           display="flex"
           gap={2}
-          // mt={8}
+          mt={8}
+          className="scrollbar"
           >
             {images.map((elem, index) =>
-                <Image
-                  key={index}
-                  src={elem}
-                  alt={index}
-                  boxSize="100%"
-                  objectFit="contain"
-                />
-              )}
+              <Image
+                key={index}
+                src={elem}
+                alt={index}
+                boxSize="100%"
+                objectFit="contain"
+              />
+            )}
           </GridItem>
           <GridItem
             rowSpan={1}
@@ -54,7 +55,7 @@ export default function Project ({title, description, images, toggleShowProject,
             >
               <h1>{title}</h1>
               <Link onClick={() => toggleShowProject()} mt="14px"><h3>All Work</h3></Link>
-              <h1>&nbsp;</h1>
+              {/* <h1>&nbsp;</h1> */}
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
@@ -69,9 +70,11 @@ export default function Project ({title, description, images, toggleShowProject,
             colEnd={5}
             p={8}
           >
-            <Stack spacing={6}>
-            <p>{description}</p>
-            {/* <Link onClick={() => toggleShowProject()}>All Work</Link> */}
+            <Stack>
+              {description.map((elem, index) => {
+                return <p key={index}>{elem}</p>
+              })}
+              {link && <Link href={`https://` + link} isExternal>{link}</Link>}
             </Stack>
           </GridItem>
         </Grid>

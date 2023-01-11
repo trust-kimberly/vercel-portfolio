@@ -7,11 +7,11 @@ const theme = extendTheme({
     global: {
       'html, body': {
         fontFamily: "helvetica",
-        color: "black"
+        color: "black",
       },
       h1: {
-        fontSize: "32px",
-        lineHeight: "36px",
+        fontSize: "30px",
+        lineHeight: "34px",
       },
       h2: {
         fontSize: "20px",
@@ -30,7 +30,7 @@ const theme = extendTheme({
       },
       "p.xs": {
         fontSize: "12px",
-      }
+      },
     },
   },
 })

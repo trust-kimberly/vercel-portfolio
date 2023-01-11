@@ -10,7 +10,6 @@ import Project from '../components/project'
 import About from '../components/about'
 import Contact from '../components/contact'
 import { ST } from 'next/dist/shared/lib/utils'
-// import Model from '../components/Model'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,73 +21,128 @@ const Model = dynamic(
 const data = [
   {
     title: "Next Music",
-    description: "Next Music description",
-    images: ["/joshuatree.jpg", "/joshuatree.jpg", "/joshuatree.jpg", "/joshuatree.jpg", "/joshuatree.jpg"],
+    description: [
+      "2022",
+      "As a Software Engineer at Next Music, designed, built, and shipped new features to Sessions Live, Next Music, and Next fans, reaching 130K artists and 1.7M fans",
+      "Built with React, React Native, Typescript, MobX, Next.js, Vercel, and Chakra UI"
+    ],
+    images: ["/sessions.jpg", "/nextmusic.png", "/nextmusic-login.png"],
   },
   {
     title: "Lexi",
-    description: "Lexi description",
-    images: ["/opossum.jpg"],
+    link: "lexiwimberly.com",
+    description: [
+      "2021",
+      "Designed and built for LA-based photographer Lexi Wimberly"
+    ],
+    images: ["/lexi.png"],
   },
   {
     title: "Jack",
-    description: "Lexi description",
-    images: ["/opossum.jpg"],
+    link: "jackhallenbeck.com",
+    description: [
+      "2021",
+      "Designed and built for LA-based audio engineer Jack Hallenbeck"
+    ],
+    images: ["/jack.png"],
   },
   {
     title: "Rethinking",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "mapc.github.io/retrofitting-search-map-embed",
+    description: [
+      "2021",
+      "Created an interactive visualization for the Metropolitan Area Planning Council's work on revitalization in the suburbs",
+      "Built and deployed using Typescript, Mapbox API, GraphiQL, and Gatsby"
+    ],
+    images: ["/rethinking.png"],
   },
   {
     title: "Digital Equity Plan",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "mapc.github.io/digital-equity-report",
+    description: [
+      "2022",
+      "Designed and developed a digital toolkit alongside Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access",
+      "The plan included over 30 interactive data visualizations created using Tableau and Mapbox, and the site itself was built and deployed using React and Gatsby"
+    ],
+    images: ["/digital-equity.png"],
   },
   {
     title: "Stone of Sex",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "stoneofsex.xyz",
+    description: [
+      "2020",
+      "Collaborated with stone cutter Hamzat Raheem to create a digital space for his sculpture, Stone of Sex"
+    ],
+    images: ["/stone.png"],
   },
   {
     title: "Creative Archaeology",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "creativearchaeology.xyz",
+    description: [
+      "2022",
+      "Collaborated with designer Bobby Joe Smith to create a digital accompaniment for Hamzat Raheem's work presented at the Friends With Benefits Festival 2022"
+    ],
+    images: ["/archaeology.png"],
   },
   {
     title: "Arthur's",
-    description: "description",
-    images: ["/opossum.jpg"],
+    description: [
+      "2022",
+      "WIP",
+      "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
+    ],
+    images: ["/arthurs.png", "/arthurs2.png"],
   },
   {
     title: "Inventory",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "trust-kimberly.github.io/stickie",
+    description: [
+      "2020",
+      "Two years spent in Providence, RI - an inventory of stickie notes and audio saved on my phone from September 2018 to May 2020"
+    ],
+    images: ["/inventory.png", "/inventory2.png"],
   },
   {
     title: "A Long Shot",
-    description: "description",
-    images: ["/opossum.jpg"],
+    link: "alongshot.xyz",
+    description: [
+      "2020",
+      "A digital thesis and archive"
+    ],
+    images: ["/longshot6.png", "/longshot4.png", "/longshot2.png", "/longshot5.png"],
   },
   {
     title: "In Case of Emergency",
-    description: "description",
-    images: ["/opossum.jpg"],
+    description: [
+      "2020",
+      "Double-sided shopping list, his socks, lingerie, whiskey bottle, antibiotics, empty baggie, mirror"
+    ],
+    images: ["/emergency.jpg"],
   },
   {
     title: "To Bear",
-    description: "description",
-    images: ["/opossum.jpg"],
+    description: [
+      "2018",
+      "Chili seeds, bodily fluids, soil, grow light, audio, plaster"
+    ],
+    images: ["/tobear.jpg"],
   },
   {
     title: "Chicken Studies",
-    description: "description",
-    images: ["/opossum.jpg"],
+    description: [
+      "2016",
+      "Kilncast glass"
+    ],
+    images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
   },
   {
     title: "Onion TV",
-    description: "description",
-    images: ["/opossum.jpg"],
+    description: [
+      "2020",
+      "Raw onion, video"
+    ],
+    images: ["/oniontv.png"],
+    // videos: ["/oniontv.mov"]
   },
   
 ]
@@ -119,6 +173,7 @@ export default function Home() {
       {showProject ? 
       <Project
       title={project.title}
+      link={project.link}
       description={project.description}
       images={project.images}
       toggleShowProject={toggleShowProject}

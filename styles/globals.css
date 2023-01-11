@@ -122,3 +122,7 @@ model-viewer {
   /* background: #dbdbff; */
   z-index: 1;
 }
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
