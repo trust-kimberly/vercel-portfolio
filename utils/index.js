@@ -1,1 +1,1 @@
-export {default as percentage} from "./percentage"
+export {default as data} from "./data"

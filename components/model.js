@@ -1,6 +1,9 @@
 import "@google/model-viewer"
+import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Model () {
+  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+
   return (
     <model-viewer 
       src="/nameplate01.glb"
@@ -12,9 +15,7 @@ export default function Model () {
       shadow-intensity="0"
       exposure="2"
       shadow-softness="0"
-      // environment-image="/joshuatree.jpg"
-      // skybox-image="/joshuatree.jpg"
-      camera-orbit="0deg 90deg 0m"
+      camera-orbit={isSmallerThan400 ? "-45deg 40deg 4m": "0deg 90deg 0m"}
     ></model-viewer>
   )
 }

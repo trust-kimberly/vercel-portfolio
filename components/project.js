@@ -2,10 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, Tag, HStack, Button, Link, Wrap, Box } from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
 import Header from '../components/header'
-import ChakraCarousel from '../components/carousel'
-import { ST } from 'next/dist/shared/lib/utils'
 
 export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
   return (
