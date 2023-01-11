@@ -9,7 +9,7 @@ import { ST } from 'next/dist/shared/lib/utils'
 
 export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
   return (
-      <Stack h="100vh" maxH="100vh" w="100vw" zIndex="5" position="absolute">
+      <Stack h="100vh" maxH="100vh" w="100vw" zIndex="5" position="absolute" filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25}>
         <Grid
           maxH="100vh"
           height="100vh"
