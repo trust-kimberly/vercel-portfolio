@@ -1,26 +1,9 @@
 import Head from 'next/head'
-<<<<<<< HEAD
 import { useMediaQuery } from '@chakra-ui/react'
-=======
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import { Container, Grid, GridItem, Stack, Flex, Image, VStack, Heading, Text, Tag, HStack, Button, Link, Wrap, useDisclosure, Modal, ModalOverlay, ModalHeader, ModalCloseButton, ModalBody, Lorem, ModalFooter, ModalContent, Box, Center, useMediaQuery } from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
-import Header from '../components/header'
-import { useState } from 'react'
-import Project from '../components/project'
-import About from '../components/about'
-import Contact from '../components/contact'
-import { ST } from 'next/dist/shared/lib/utils'
->>>>>>> d93eb95968445dc1583cbae8225ebf9c3bdc4724
 import Mobile from '../components/mobile'
 import Desktop from '../components/desktop'
 
 export default function Home() {
-<<<<<<< HEAD
-=======
-
->>>>>>> d93eb95968445dc1583cbae8225ebf9c3bdc4724
   const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
 
   return (
