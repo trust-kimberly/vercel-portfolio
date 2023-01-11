@@ -4,7 +4,7 @@ import Mobile from '../components/mobile'
 import Desktop from '../components/desktop'
 
 export default function Home() {
-  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)')
 
   return (
     <>
@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {isSmallerThan400 ? <Mobile /> : <Desktop />}
+      {isSmallerThan800 ? <Mobile /> : <Desktop />}
     </>
   )
 }

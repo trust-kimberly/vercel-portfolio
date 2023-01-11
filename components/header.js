@@ -1,7 +1,7 @@
 import { Stack, Link, Flex, useMediaQuery } from "@chakra-ui/react";
 
 export default function Header ({toggleBlur}) {
-  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)')
 
   return (
     <>
@@ -12,7 +12,7 @@ export default function Header ({toggleBlur}) {
         <p>Based in Los Angeles, CA.</p>
       </Stack>
       <Flex direction="column">
-        {isSmallerThan400 && <Link href="/work"><h3>Work</h3></Link> }
+        {isSmallerThan800 && <Link href="/work"><h3>Work</h3></Link> }
         <Link onClick={() => toggleBlur(true)}><h3>Contact & Info</h3></Link>
       </Flex>
       <p className="xs">Site & work © Kimberly Nguyen 2022</p>

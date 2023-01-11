@@ -2,7 +2,7 @@ import "@google/model-viewer"
 import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Model () {
-  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)')
 
   return (
     <model-viewer 
@@ -15,7 +15,7 @@ export default function Model () {
       shadow-intensity="0"
       exposure="2"
       shadow-softness="0"
-      camera-orbit={isSmallerThan400 ? "-45deg 40deg 4m": "0deg 90deg 0m"}
+      camera-orbit={isSmallerThan800 ? "-45deg 40deg 4m": "0deg 90deg 8m"}
     ></model-viewer>
   )
 }

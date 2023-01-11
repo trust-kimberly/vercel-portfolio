@@ -93,11 +93,12 @@ export default function Desktop () {
         </Stack>
       }
       {blur &&
-      <Center
+      <Stack
         h="100vh"
         w="100vw"
         overflow="scroll"
         position="absolute"
+        align="center"
         zIndex="7"
         onClick={() => toggleBlur(false)}
         cursor="grab"
@@ -107,7 +108,7 @@ export default function Desktop () {
           <Contact />
           <About />
         </Stack>
-      </Center>}
+      </Stack>}
       <Stack h="100vh" w="100vw" filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.5}>
         <Model />
       </Stack>

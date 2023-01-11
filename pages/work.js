@@ -5,11 +5,11 @@ import Link from "next/link"
 import Desktop from "../components/desktop"
 
 export default function Work () {
-  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)')
 
   return (
     <>
-      {isSmallerThan400 ?
+      {isSmallerThan800 ?
         <>
           <Stack
             w="100vw"

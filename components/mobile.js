@@ -31,7 +31,17 @@ export default function Mobile () {
           <Stack zIndex="10" position="fixed">
             <Footer /> 
           </Stack>
-          <Stack spacing={8} p={6} h="100vh" w="100vw" overflow="scroll" position="absolute" zIndex="7" onClick={() => toggleBlur(false)} cursor="grab">
+          <Stack
+            spacing={8}
+            p={6}
+            h="100vh"
+            w="100vw"
+            overflow="scroll"
+            position="absolute"
+            zIndex="7"
+            onClick={() => toggleBlur(false)}
+            cursor="grab"
+          >
             <Contact />
             <About />
           </Stack>
