@@ -1,7 +1,9 @@
-import { Grid, GridItem, Stack, Flex, Image, Link } from '@chakra-ui/react'
+import { Grid, GridItem, Stack, Flex, Image, Link, useMediaQuery } from '@chakra-ui/react'
 import Header from '../components/header'
 
 export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
+  const [isSmallerThan1400] = useMediaQuery('(max-width: 1400px)')
+
   return (
       <Stack
         h="100vh"
@@ -58,12 +60,12 @@ export default function Project ({title, link, description, images, toggleShowPr
               direction="column"
             >
               <h1>{title}</h1>
-              <Link onClick={() => toggleShowProject()} mt="14px"><h3>All Work</h3></Link>
-              {/* <h1>&nbsp;</h1> */}
+              <Link onClick={() => toggleShowProject()} mt="12px"><h3>All Work</h3></Link>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
+              {isSmallerThan1400 && <h1>&nbsp;</h1>}
             </Flex>
           </GridItem>
           <GridItem

@@ -1,6 +1,5 @@
 import '../styles/globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
-import { extendTheme } from "@chakra-ui/react"
+import { ChakraProvider, ComponentStyleConfig, extendTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
   styles: {
@@ -21,9 +20,9 @@ const theme = extendTheme({
         fontSize: "18px",
         lineHeight: "22px"
       },
-      a: {
-        color: "lavenderblush",
-      },
+      // a: {
+      //   color: "lavenderblush",
+      // },
       p: {
         fontSize: "16px",
         lineHeight: "20px",
@@ -33,6 +32,17 @@ const theme = extendTheme({
       },
     },
   },
+  components: {
+    Link: {
+      baseStyle: {
+        _hover: {
+          color: "lavender",
+          textDecoration: "none",
+          transitionDuration: "1s"
+        },
+      }
+    }
+  }
 })
 
 function App({ Component, pageProps }) {

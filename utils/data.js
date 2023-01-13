@@ -40,28 +40,6 @@ const data = [
     images: ["/jack.png"],
   },
   {
-    title: "Rethinking",
-    slug: "rethinking",
-    link: "mapc.github.io/retrofitting-search-map-embed",
-    description: [
-      "2021",
-      "Created an interactive visualization for the Metropolitan Area Planning Council's work on revitalization in the suburbs",
-      "Built and deployed using Typescript, Mapbox API, GraphiQL, and Gatsby"
-    ],
-    images: ["/rethinking.png"],
-  },
-  {
-    title: "Digital Equity Plan",
-    slug: "digital-equity",
-    link: "mapc.github.io/digital-equity-report",
-    description: [
-      "2022",
-      "Designed and developed a digital toolkit alongside Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access",
-      "The plan included over 30 interactive data visualizations created using Tableau and Mapbox, and the site itself was built and deployed using React and Gatsby"
-    ],
-    images: ["/digital-equity.png"],
-  },
-  {
     title: "Stone of Sex",
     slug: "stone",
     link: "stoneofsex.xyz",
@@ -80,6 +58,28 @@ const data = [
       "Collaborated with designer Bobby Joe Smith to create a digital accompaniment for Hamzat Raheem's work presented at the Friends With Benefits Festival 2022"
     ],
     images: ["/archaeology.png"],
+  },
+  {
+    title: "Rethinking",
+    slug: "rethinking",
+    link: "mapc.github.io/retrofitting-search-map-embed",
+    description: [
+      "2021",
+      "Created an interactive visualization for the Metropolitan Area Planning Council's work on revitalization in the suburbs",
+      "Built and deployed using Typescript, Mapbox API, GraphiQL, and Gatsby"
+    ],
+    images: ["/rethinking.png"],
+  },
+  {
+    title: "Digital Equity Plan",
+    slug: "digital-equity",
+    link: "mapc.github.io/digital-equity-report",
+    description: [
+      "2022",
+      "Designed and developed with the Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access, using Tableau, Mapbox, React, and Gatsby",
+      // "The plan included over 30 interactive data visualizations created using Tableau and Mapbox, and the site itself was built and deployed using React and Gatsby"
+    ],
+    images: ["/digital-equity.png"],
   },
   {
     title: "Inventory",
@@ -119,24 +119,24 @@ const data = [
     ],
     images: ["/oniontv.png", "/oniontv2.png"],
   },
-  {
-    title: "In Case of Emergency",
-    slug: "emergency",
-    description: [
-      "2020",
-      "Double-sided shopping list, his socks, lingerie, whiskey bottle, antibiotics, empty baggie, mirror"
-    ],
-    images: ["/emergency.jpg"],
-  },
-  {
-    title: "To Bear",
-    slug: "to-bear",
-    description: [
-      "2018",
-      "Chili seeds, bodily fluids, soil, grow light, audio, plaster"
-    ],
-    images: ["/tobear.jpg"],
-  },
+  // {
+  //   title: "In Case of Emergency",
+  //   slug: "emergency",
+  //   description: [
+  //     "2020",
+  //     "Double-sided shopping list, his socks, lingerie, whiskey bottle, antibiotics, empty baggie, mirror"
+  //   ],
+  //   images: ["/emergency.jpg"],
+  // },
+  // {
+  //   title: "To Bear",
+  //   slug: "to-bear",
+  //   description: [
+  //     "2018",
+  //     "Chili seeds, bodily fluids, soil, grow light, audio, plaster"
+  //   ],
+  //   images: ["/tobear.jpg"],
+  // },
 ]
 
 export default data
