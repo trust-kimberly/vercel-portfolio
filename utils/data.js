@@ -10,6 +10,15 @@ const data = [
     images: ["/sessions.jpg", "/nextmusic.png", "/nextmusic-login.png"],
   },
   {
+    title: "Mountain Project",
+    slug: "mtn-proj",
+    description: [
+      "2022",
+      "As a rock climber and regular user of Mountain Project, I reimagined its look and feel as a personal project.",
+    ],
+    images: ["/thumbnails.png", "/search-results-map.png", "/search-results.png", "/details.png"],
+  },
+  {
     title: "Arthur's",
     slug: "arthurs",
     description: [
@@ -110,15 +119,15 @@ const data = [
     ],
     images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
   },
-  {
-    title: "Onion TV",
-    slug: "onion",
-    description: [
-      "2020",
-      "Raw onion, iPhone, video"
-    ],
-    images: ["/oniontv.png", "/oniontv2.png"],
-  },
+  // {
+  //   title: "Onion TV",
+  //   slug: "onion",
+  //   description: [
+  //     "2020",
+  //     "Raw onion, iPhone, video"
+  //   ],
+  //   images: ["/oniontv.png", "/oniontv2.png"],
+  // },
   // {
   //   title: "In Case of Emergency",
   //   slug: "emergency",
