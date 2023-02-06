@@ -8,7 +8,7 @@ export default function Contact () {
       <Stack spacing={0}>
       <Link href="https://github.com/trust-kimberly" isExternal><h3>GitHub</h3></Link>
       <Link href="https://www.linkedin.com/in/trust-kimberly/" isExternal><h3>LinkedIn</h3></Link>
-      <Link href="/Kimberly-Nguyen-CV.pdf" target="_blank"><h3>CV</h3></Link>
+      {/* <Link href="/Kimberly-Nguyen-CV.pdf" target="_blank"><h3>CV</h3></Link> */}
       </Stack>
     </Stack>
   )
