@@ -16,7 +16,7 @@ const data = [
       "2022",
       "As a rock climber and regular user of Mountain Project, I reimagined its look and feel as a personal project.",
     ],
-    images: ["/thumbnails.png", "/search-results-map.png", "/search-results.png", "/details.png"],
+    images: ["/Search.png", "/search-results-map.png", "/thumbnails.png", "/search-results.png", "/details.png"],
   },
   {
     title: "Arthur's",
