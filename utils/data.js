@@ -26,7 +26,7 @@ const data = [
       "WIP",
       "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
     ],
-    images: ["/arthurs.png", "/arthurs2.png"],
+    images: ["/arthurs.png", "/arthurs2.png", "/gallery.png", "/project-details.png", "/contact.png"],
   },
   {
     title: "Lexi",
