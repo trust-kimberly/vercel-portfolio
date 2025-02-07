@@ -15,7 +15,7 @@ export default function Header ({toggleBlur}) {
           <Link onClick={() => toggleBlur(true)}><h3>Contact & Info</h3></Link>
         </Flex>
       </Stack>
-      <p className="xs">Site & work © Kimberly Nguyen 2022</p>
+      <p className="xs">Site & work © Kimberly Nguyen 2025</p>
     </Stack>
   )
 }
