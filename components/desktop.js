@@ -23,6 +23,10 @@ export default function Desktop () {
   const [showProject, toggleShowProject] = useState(false)
   const [project, setProject] = useState()
 
+  const handleProjectNavigation = (newProject) => {
+    setProject(newProject);
+  }
+
   return (
     <>
       <Head>
@@ -37,9 +41,11 @@ export default function Desktop () {
           link={project.link}
           description={project.description}
           images={project.images}
+          slug={project.slug}
           toggleShowProject={toggleShowProject}
           blur={blur}
           toggleBlur={toggleBlur}
+          onNavigate={handleProjectNavigation}
         />
         :
         <Stack w="100vw" zIndex="5" position="absolute" bottom={0} filter={blur && "auto"} blur={blur && "6px"} opacity={blur && 0.25}>

@@ -1,8 +1,19 @@
 import { Grid, GridItem, Stack, Flex, Image, Link, useMediaQuery } from '@chakra-ui/react'
 import Header from '../components/header'
+import { data } from '../utils'
 
-export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur}) {
+export default function Project ({title, link, description, images, toggleShowProject, blur, toggleBlur, slug, onNavigate}) {
   const [isSmallerThan1400] = useMediaQuery('(max-width: 1400px)')
+  
+  const currentIndex = data.findIndex(elem => elem.slug === slug);
+  const prevProject = currentIndex > 0 ? data[currentIndex - 1] : data[data.length - 1];
+  const nextProject = currentIndex < data.length - 1 ? data[currentIndex + 1] : data[0];
+
+  const handleNavigation = (project) => {
+    if (onNavigate) {
+      onNavigate(project);
+    }
+  }
 
   return (
       <Stack
@@ -61,7 +72,20 @@ export default function Project ({title, link, description, images, toggleShowPr
             >
               <h1>{title}</h1>
               <Link onClick={() => toggleShowProject()} mt="12px"><h3>All Work</h3></Link>
-              <h1>&nbsp;</h1>
+              <Flex justify="space-between" w="100%" mt={2}>
+                <Link 
+                  onClick={() => handleNavigation(prevProject)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <h3>Previous</h3>
+                </Link>
+                <Link 
+                  onClick={() => handleNavigation(nextProject)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <h3>Next</h3>
+                </Link>
+              </Flex>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
               <h1>&nbsp;</h1>
