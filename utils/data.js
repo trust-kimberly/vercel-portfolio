@@ -119,15 +119,15 @@ const data = [
     ],
     images: ["/longshot6.png", "/longshot4.png", "/longshot2.png", "/longshot5.png"],
   },
-  {
-    title: "Chicken Studies",
-    slug: "chicken",
-    description: [
-      "2016",
-      "Kilncast glass"
-    ],
-    images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
-  },
+  // {
+  //   title: "Chicken Studies",
+  //   slug: "chicken",
+  //   description: [
+  //     "2016",
+  //     "Kilncast glass"
+  //   ],
+  //   images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
+  // },
   // {
   //   title: "Onion TV",
   //   slug: "onion",
