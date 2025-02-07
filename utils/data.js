@@ -1,11 +1,21 @@
 const data = [
   {
+    title: "Formless",
+    slug: "formless",
+    link: "share.formless.xyz",
+    description: [
+      "2022 - Present",
+      "Currently leading the design and development of Formless's product Share, a music streaming decentralized application"
+    ],
+    images: ["/share-asset.png", "/share-dashboard.png", "/share-offramp.png"],
+  },
+  {
     title: "Next Music",
     slug: "next-music",
     description: [
       "2022",
-      "As a Software Engineer at Next Music, designed, built, and shipped new features to Sessions Live, Next Music, and Next fans, reaching 130K artists and 1.7M fans",
-      "Built with React, React Native, Typescript, MobX, Next.js, Vercel, and Chakra UI"
+      "As a UX Engineer at Next Music, designed, built, and shipped new features to Sessions Live, Next Music, and Next fans, reaching 130K artists and 1.7M fans",
+      "Designed with Figma, built with React, React Native, Typescript, MobX, Next.js, Vercel, and Chakra UI"
     ],
     images: ["/sessions.jpg", "/nextmusic.png", "/nextmusic-login.png"],
   },
@@ -14,7 +24,7 @@ const data = [
     slug: "mtn-proj",
     description: [
       "2022",
-      "As a rock climber and regular user of Mountain Project, I reimagined its look and feel as a personal project.",
+      "As a rock climber and regular user of Mountain Project, I reimagined its look and feel.",
     ],
     images: ["/mtn-title.png", "/Search.png", "/search-results-map.png", "/thumbnails.png", "/search-results.png", "/details.png"],
   },
@@ -36,7 +46,7 @@ const data = [
       "2021",
       "Designed and built for LA-based photographer Lexi Wimberly"
     ],
-    images: ["/lexi.png"],
+    images: ["/lexi-home.png", "/lexi-gallery.png"],
   },
   {
     title: "Jack",
@@ -74,7 +84,7 @@ const data = [
     link: "mapc.github.io/retrofitting-search-map-embed",
     description: [
       "2021",
-      "Created an interactive visualization for the Metropolitan Area Planning Council's work on revitalization in the suburbs",
+      "Designed and built an interactive visualization for the Metropolitan Area Planning Council's work on revitalization in the suburbs",
       "Built and deployed using Typescript, Mapbox API, GraphiQL, and Gatsby"
     ],
     images: ["/rethinking.png"],
@@ -86,7 +96,6 @@ const data = [
     description: [
       "2022",
       "Designed and developed with the Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access, using Tableau, Mapbox, React, and Gatsby",
-      // "The plan included over 30 interactive data visualizations created using Tableau and Mapbox, and the site itself was built and deployed using React and Gatsby"
     ],
     images: ["/digital-equity.png"],
   },
