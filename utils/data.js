@@ -89,16 +89,16 @@ const data = [
     ],
     images: ["/rethinking.png"],
   },
-  {
-    title: "Digital Equity Plan",
-    slug: "digital-equity",
-    link: "mapc.github.io/digital-equity-report",
-    description: [
-      "2022",
-      "Designed and developed with the Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access, using Tableau, Mapbox, React, and Gatsby",
-    ],
-    images: ["/digital-equity.png"],
-  },
+  // {
+  //   title: "Digital Equity Plan",
+  //   slug: "digital-equity",
+  //   link: "mapc.github.io/digital-equity-report",
+  //   description: [
+  //     "2022",
+  //     "Designed and developed with the Metropolitan Area Planning Council's civic technologists and data analysts to share resources and inform decisions around municipal broadband access, using Tableau, Mapbox, React, and Gatsby",
+  //   ],
+  //   images: ["/digital-equity.png"],
+  // },
   {
     title: "Inventory",
     slug: "inventory",
