@@ -3,11 +3,12 @@ import { Stack, Link } from '@chakra-ui/react'
 export default function Contact () {
   return (
     <Stack spacing={6}>
-      <h1>Contact 💻</h1>
-      <Link href="mailto:kimberlynguyen.xyz@gmail.com" isExternal><h2>kimberlynguyen.xyz@gmail.com</h2></Link>
+      <h3>💻 Contact</h3>
       <Stack spacing={0}>
-      <Link href="https://www.linkedin.com/in/trust-kimberly/" isExternal><h3>LinkedIn</h3></Link>
-      <Link href="https://github.com/trust-kimberly" isExternal><h3>GitHub</h3></Link>
+      <Link href="mailto:kimberlynguyen.xyz@gmail.com" isExternal><p>Email</p></Link>
+      <Link href="https://www.instagram.com/trust.kimberly/" isExternal><p>Instagram</p></Link>
+      <Link href="https://www.linkedin.com/in/trust-kimberly/" isExternal><p>LinkedIn</p></Link>
+      <Link href="https://github.com/trust-kimberly" isExternal><p>GitHub</p></Link>
       </Stack>
     </Stack>
   )

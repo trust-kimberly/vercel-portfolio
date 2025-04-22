@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import { Stack } from '@chakra-ui/react'
+import { Stack, IconButton } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Header from '../components/header'
 import { useState } from 'react'
 import About from '../components/about'
 import Contact from '../components/contact'
 import Footer from './footer'
+import { X } from 'lucide-react'
 
 const Model = dynamic(
   () => import('../components/model.js'),
@@ -28,8 +29,13 @@ export default function Mobile () {
       </Stack>
       {blur &&
         <>
-          <Stack zIndex="10" position="fixed">
-            <Footer /> 
+          <Stack zIndex="10" position="absolute" top={0} right="0" p={2} onClick={() => toggleBlur(false)}>
+            <IconButton
+              icon={<X size={24} />}
+              aria-label="Close"
+              variant="ghost"
+              onClick={() => toggleBlur(false)}
+            />
           </Stack>
           <Stack
             spacing={8}
@@ -39,11 +45,15 @@ export default function Mobile () {
             overflow="scroll"
             position="absolute"
             zIndex="7"
+            justifyContent="center"
+            alignItems="center"
             onClick={() => toggleBlur(false)}
             cursor="grab"
           >
-            <Contact />
-            <About />
+            <Stack spacing={8} width="100%" maxW="600px">
+              <Contact />
+              <About />
+            </Stack>
           </Stack>
         </>
       }

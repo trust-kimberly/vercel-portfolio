@@ -7,7 +7,7 @@ const data = [
       "2022 - Present",
       "Currently leading the design and development of Formless's product Share, a music streaming decentralized application"
     ],
-    images: ["/share-asset.png", "/share-dashboard.png", "/share-offramp.png"],
+    images: ["/share-marketplace.png", "/share-collection.png", "/share-profile.png", "/share-dashboard.png", "/share-offramp.png"],
   },
   {
     title: "Next Music",
@@ -29,16 +29,6 @@ const data = [
   //   images: ["/mtn-title.png", "/Search.png", "/search-results-map.png", "/thumbnails.png", "/search-results.png", "/details.png"],
   // },
   {
-    title: "Arthur's",
-    slug: "arthurs",
-    description: [
-      "2022",
-      "WIP",
-      "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
-    ],
-    images: ["/arthurs.png", "/arthurs2.png", "/gallery.png", "/project-details.png", "/contact.png"],
-  },
-  {
     title: "Lexi",
     slug: "lexi",
     link: "lexiwimberly.com",
@@ -57,6 +47,16 @@ const data = [
       "Designed and built for LA-based audio engineer Jack Hallenbeck"
     ],
     images: ["/jack.png"],
+  },
+  {
+    title: "Arthur's",
+    slug: "arthurs",
+    description: [
+      "2022",
+      "WIP",
+      "Collaborated with designer Bobby Joe Smith on site and branding for interior designer Nick Spain of Arthur's Studio"
+    ],
+    images: ["/arthurs.png", "/arthurs2.png", "/gallery.png", "/project-details.png", "/contact.png"],
   },
   {
     title: "Stone of Sex",
@@ -119,24 +119,24 @@ const data = [
     ],
     images: ["/longshot6.png", "/longshot4.png", "/longshot2.png", "/longshot5.png"],
   },
-  // {
-  //   title: "Chicken Studies",
-  //   slug: "chicken",
-  //   description: [
-  //     "2016",
-  //     "Kilncast glass"
-  //   ],
-  //   images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
-  // },
-  // {
-  //   title: "Onion TV",
-  //   slug: "onion",
-  //   description: [
-  //     "2020",
-  //     "Raw onion, iPhone, video"
-  //   ],
-  //   images: ["/oniontv.png", "/oniontv2.png"],
-  // },
+  {
+    title: "Chicken Studies",
+    slug: "chicken",
+    description: [
+      "2016",
+      "Kilncast glass"
+    ],
+    images: ["/chickenstudies.jpg", "/chickenstudies2.jpg", "/chickenstudies3.jpg", "/chickenstudies4.jpg"],
+  },
+  {
+    title: "Onion TV",
+    slug: "onion",
+    description: [
+      "2020",
+      "Raw onion, iPhone, video"
+    ],
+    images: ["/oniontv.png", "/oniontv2.png"],
+  },
   // {
   //   title: "In Case of Emergency",
   //   slug: "emergency",

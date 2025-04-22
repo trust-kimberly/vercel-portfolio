@@ -105,12 +105,13 @@ export default function Desktop () {
         overflow="scroll"
         position="absolute"
         align="center"
+        justify="center"
         zIndex="7"
         onClick={() => toggleBlur(false)}
         cursor="grab"
         p={8}
       >
-        <Stack w="50%" spacing={8}>
+        <Stack w="50%" spacing={8} maxW="600px">
           <Contact />
           <About />
         </Stack>

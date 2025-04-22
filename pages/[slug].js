@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { data } from '../utils'
-import { Stack, Link, Image, Button, Flex } from '@chakra-ui/react'
+import { Stack, Link, Image, Button, Flex, Box } from '@chakra-ui/react'
 import Footer from '../components/footer'
 
 export default function MobileProject () {
@@ -14,6 +14,10 @@ export default function MobileProject () {
 
   return(
     <>
+      <Box position="fixed" top="10px" right="10px" zIndex={10}>
+        <Footer />
+      </Box>
+      
       <Stack
         w="100vw"
         minH="100vh"
@@ -45,7 +49,6 @@ export default function MobileProject () {
           </>
         )}
       </Stack>
-      <Footer />
     </>
   )
 }

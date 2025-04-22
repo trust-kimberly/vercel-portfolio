@@ -16,6 +16,7 @@ export default function Work () {
             p={6}
             bg="lavender"
           >
+            <h3 style={{ marginBottom: '16px' }}>All Work</h3>
             {data.map((elem, index) => {
               return <Link key={index} href={`/` + elem.slug}><Image src={elem.images[0]} alt={index} /></Link> 
             })}
