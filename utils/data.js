@@ -19,15 +19,15 @@ const data = [
     ],
     images: ["/sessions.jpg", "/nextmusic.png", "/nextmusic-login.png"],
   },
-  {
-    title: "Mountain Project",
-    slug: "mtn-proj",
-    description: [
-      "2022",
-      "As a rock climber and regular user of Mountain Project, I reimagined its look and feel.",
-    ],
-    images: ["/mtn-title.png", "/Search.png", "/search-results-map.png", "/thumbnails.png", "/search-results.png", "/details.png"],
-  },
+  // {
+  //   title: "Mountain Project",
+  //   slug: "mtn-proj",
+  //   description: [
+  //     "2022",
+  //     "As a rock climber and regular user of Mountain Project, I reimagined its look and feel.",
+  //   ],
+  //   images: ["/mtn-title.png", "/Search.png", "/search-results-map.png", "/thumbnails.png", "/search-results.png", "/details.png"],
+  // },
   {
     title: "Arthur's",
     slug: "arthurs",
